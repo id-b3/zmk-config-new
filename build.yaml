@@ -17,4 +17,10 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+board: ["nice_nano_v2"]
+shield: ["skeletyl_left", "skeletyl_right"]
+include:
+  - board: nice_nano_v2 # Target board for the left side
+    shield: skeletyl_left # Shield identifier for the left side
+  - board: nice_nano_v2 # Target board for the right side
+    shield: skeletyl_right # Shield identifier for the right side
