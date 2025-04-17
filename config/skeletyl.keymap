@@ -16,10 +16,9 @@
 #define GAMING 4
 #define WOTR 5
 
-
-    &led_strip {
-        chain-length = <18>;
-    };
+&led_strip {
+    chain-length = <18>;
+};
 
 / {
     // --- Combos ---
