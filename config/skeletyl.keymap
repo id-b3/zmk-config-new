@@ -56,17 +56,25 @@
             label = "PLUS_MINUS";
             #binding-cells = <0>;
             bindings =
-                <¯o_press &kp LALT>, // Press Left Alt
-                <¯o_tap &kp KP_N2 &kp KP_N4 &kp KP_N1>, // Tap Numpad 2, 4, 1 while Alt is held
-                <¯o_release &kp LALT>; // Release Left Alt
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
 
         mouse_jit: mouse_jit {
             compatible = "zmk,behavior-macro";
-            label = "MOUSE_JIT";
             #binding-cells = <0>;
-            bindings = <¯o_press &kp A>, <¯o_pause_for_release>, <¯o_wait_ms 10000>, <¯o_release &kp A>; // Press A, wait, Release A
+            bindings = <&macro_press>, <&kp A>, <&macro_wait_time 10000>;
+
+            label = "MOUSE_JIT";
         };
+    };
+
+    &led_strip {
+        chain-length = <18>;
     };
 
     // --- Keymap ---
