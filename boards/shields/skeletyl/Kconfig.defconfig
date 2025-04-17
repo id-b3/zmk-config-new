@@ -20,9 +20,6 @@ if SHIELD_SKELETYL_LEFT
 config ZMK_KEYBOARD_NAME
 	default "Skeletyl Left"
 
-config ZMK_SPLIT_ROLE_PERIPHERAL
-  default y
-
 endif
 
 # Settings specific to the right shield
