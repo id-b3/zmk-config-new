@@ -3,6 +3,12 @@
 
 / {
 
+    chosen {
+        zmk,kscan = &kscan_0;
+        zmk,matrix_transform = &default_transform;
+        zmk,battery = &vbatt;
+    };
+
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
@@ -55,10 +61,4 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)    RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,
         label = "VBATT";
     };
 
-    chosen {
-        zmk,kscan = &kscan_0;
-        zmk,matrix_transform = &default_transform;
-        zmk,battery = &vbatt;
-        zmk,underglow = &led_strip;
-    };
 };
