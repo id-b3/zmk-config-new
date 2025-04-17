@@ -86,10 +86,10 @@
             label = "COLEMAK";
             bindings = <
                 // Left Hand                                                    // Right Hand
-                &kp Q          &kp W          &kp F             &kp P        &kp G           &kp J          &kp L          &kp U          &kp Y       &kp SEMI
-                &hm LGUI A     &hm LALT R     &hm LSHFT S       &hm LCTRL T  &kp D           &kp H          &hm RCTRL N    &hm RSHFT E    &hm LALT I  &hm RGUI O
-                &kp Z          &kp X          &kp C             &kp V        &kp B           &kp K          &kp M          &kp COMMA      &kp DOT     &kp FSLH
-                                             &mt LSHIFT ENTER  < SYMNUM SPACE     &none          &none          &kp BACKSPACE  < NAV TAB
+                &kp Q       &kp W       &kp F             &kp P        &kp G    &kp J  &kp L          &kp U        &kp Y       &kp SEMI
+                &hm LGUI A  &hm LALT R  &hm LSHFT S       &hm LCTRL T  &kp D    &kp H  &hm RCTRL N    &hm RSHFT E  &hm LALT I  &hm RGUI O
+                &kp Z       &kp X       &kp C             &kp V        &kp B    &kp K  &kp M          &kp COMMA    &kp DOT     &kp FSLH
+                                        &mt LSHIFT ENTER  &lt 1 SPACE  &none    &none  &kp BACKSPACE  &lt 2 TAB
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN   &inc_dec_kp RIGHT LEFT>;
         };
