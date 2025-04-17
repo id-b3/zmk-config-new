@@ -130,7 +130,7 @@
                 &mouse_jit     &none          &none             &none         &none            &none            &none            &none            &none            &none
                                               &trans            &trans           &none            &none            &trans           &trans
             >;
-            sensor-bindings = <&rgb_ug HUI HUD   &rgb_ug BRI BRD>;
+            sensor-bindings = <&inc_dec_kp J K   &inc_dec_kp H L>;
         };
 
         // Layer 4: Gaming Layer
