@@ -16,6 +16,11 @@
 #define GAMING 4
 #define WOTR 5
 
+
+    &led_strip {
+        chain-length = <18>;
+    };
+
 / {
     // --- Combos ---
     combos {
@@ -71,10 +76,6 @@
 
             label = "MOUSE_JIT";
         };
-    };
-
-    &led_strip {
-        chain-length = <18>;
     };
 
     // --- Keymap ---
