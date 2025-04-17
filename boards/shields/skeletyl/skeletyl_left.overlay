@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+#include "skeletyl.dtsi" // Include common definitions
+
+// Enable the left encoder defined in the .dtsi file
+&left_encoder {
+    status = "okay";
+};
+
+// Define the column pins for the left half matrix
+&kscan0 {
+    col-gpios
+        = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};

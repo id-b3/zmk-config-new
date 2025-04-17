@@ -1,0 +1,8 @@
+#include <layouts/cuddlykeyboards/ferris.dtsi>
+#include <layouts/foostan/corne/5column.dtsi>
+
+// Assigning suitable kscan and matrix transforms
+&skeletyl_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+};
