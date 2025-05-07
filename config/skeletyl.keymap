@@ -71,7 +71,7 @@
         mouse_jit: mouse_jit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp A>, <&macro_wait_time 10000>;
+            bindings = <¯o_tap>, <&kp A>; // Just tap the key
 
             label = "MOUSE_JIT";
         };
@@ -125,7 +125,7 @@
             label = "SPECIAL";
             bindings = <
                 // Left Hand                                                    // Right Hand
-                &bt BT_CLR     &bt BT_NXT     &bt BT_PRV        &to GAMING      &to WOTR         &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI
+                &bt BT_CLR     &bt BT_NXT     &bt BT_PRV        &none      &to WOTR         &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI
                 &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &rgb_ug RGB_SAD
                 &mouse_jit     &none          &none             &none         &none            &none            &none            &none            &none            &none
                                               &trans            &trans           &none            &none            &trans           &trans
@@ -138,25 +138,12 @@
             label = "GAMING";
             bindings = <
                 // Left Hand                                                    // Right Hand
-                &kp ENTER      &kp Q          &kp W             &kp E        &kp R           &kp T          &kp Y          &kp U          &kp O       &to COLEMAK
+                &kp ENTER      &kp Q          &kp W             &kp E        &kp R           &kp N7         &kp N8         &kp N9      &kp N0      &to COLEMAK // Numbers on Right Top Row
                 &kp LSHFT      &kp A          &kp S             &kp D        &kp F           &kp G          &kp J          &kp K          &kp L       &none
                 &kp LCTRL      &kp Z          &kp X             &kp C        &kp V           &kp M          &kp I          &kp DOT        &kp LALT    &none
-                                              &kp TAB           &kp SPACE        &none          &none          &none          &none
+                                            &kp TAB           &kp SPACE        &none          &none          &none          &none
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_DN PG_UP>;
-        };
-
-        // Layer 5: WotR Layer
-        WotR {
-            label = "WOTR";
-            bindings = <
-                // Left Hand                                                    // Right Hand
-                &kp ENTER      &kp Q          &kp W             &kp E        &kp G           &kp R          &kp N7         &kp N8         &kp N9      &to COLEMAK
-                &kp LSHFT      &kp A          &kp S             &kp D        &kp H           &kp F          &kp N4         &kp N5         &kp N6      &kp F5
-                &kp BSPC       &kp M          &kp J             &kp C        &kp I           &kp B          &kp N1         &kp N2         &kp N3      &kp F8
-                                              &kp TAB           &kp SPACE        &kp SPACE      &trans         &trans         &trans
-            >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
