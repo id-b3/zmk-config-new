@@ -91,6 +91,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <2 31>;
         };
+
+        tmux {
+            bindings = <&kp LC(B)>;
+            key-positions = <13 24>;
+        };
     };
 
     // --- Conditional Layers (Tri Layer) ---
@@ -117,7 +122,8 @@
             quick-tap-ms = <125>; // Optional: ms before quick tap ends
             flavor = "tap-preferred"; // Tapping is preferred over holding
             bindings = <&kp>, <&kp>;
- // Behavior expects two bindings: <hold>, <tap>
+
+            // Behavior expects two bindings: <hold>, <tap>
         };
 
         // Add other custom behaviors here if needed
@@ -150,7 +156,7 @@
         colemak_layer {
             label = "COLEMAK";
             bindings = <
-  &kp Q       &kp W       &kp F             &kp P        &kp G    &kp J  &kp L          &kp U        &kp Y       &kp COLON
+  &kp Q       &kp W       &kp F             &kp P        &kp G    &kp J  &kp L          &kp U        &kp Y       &none
   &hm LGUI A  &hm LALT R  &hm LSHFT S       &hm LCTRL T  &kp D    &kp H  &hm RCTRL N    &hm RSHFT E  &hm LALT I  &hm RGUI O
   &kp Z       &kp X       &kp C             &kp V        &kp B    &kp K  &kp M          &kp COMMA    &kp DOT     &kp FSLH
                           &mt LSHIFT ENTER  &lt 1 SPACE  &none    &none  &kp BACKSPACE  &lt 2 TAB
