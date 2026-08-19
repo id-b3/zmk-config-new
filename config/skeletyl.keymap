@@ -114,7 +114,6 @@
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <125>; // Optional: ms before quick tap ends
@@ -132,7 +131,6 @@
     macros {
         plus_minus: plus_minus {
             compatible = "zmk,behavior-macro";
-            label = "PLUS_MINUS";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
