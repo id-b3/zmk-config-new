@@ -114,7 +114,7 @@
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            name = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <125>; // Optional: ms before quick tap ends
@@ -132,7 +132,7 @@
     macros {
         plus_minus: plus_minus {
             compatible = "zmk,behavior-macro";
-            label = "PLUS_MINUS";
+            name = "PLUS_MINUS";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -152,7 +152,7 @@
         // Layer 0: Colemak Base Layer
 
         colemak_layer {
-            label = "COLEMAK";
+            name = "COLEMAK";
             bindings = <
   &kp Q       &kp W       &kp F             &kp P        &kp G    &kp J  &kp L          &kp U        &kp Y       &kp COLON
   &hm LGUI A  &hm LALT R  &hm LSHFT S       &hm LCTRL T  &kp D    &kp H  &hm RCTRL N    &hm RSHFT E  &hm LALT I  &hm RGUI O
@@ -166,7 +166,7 @@
         // Layer 1: Symbols & Numbers
 
         symnum_layer {
-            label = "SYMNUM";
+            name = "SYMNUM";
             bindings = <
   &kp LA(F4)       &kp AT     &kp DQT    &kp LPAR  &kp RPAR     &none  &kp N7  &kp N8  &kp N9  &kp GRAVE
   &kp NON_US_HASH  &kp EQUAL  &kp MINUS  &kp EXCL  &kp PRCNT    &none  &kp N4  &kp N5  &kp N6  &kp N0
@@ -180,7 +180,7 @@
         // Layer 2: Navigation & Function Keys
 
         nav_layer {
-            label = "NAV";
+            name = "NAV";
             bindings = <
   &kp KP_NUMLOCK  &kp F7  &kp F8  &kp F9  &kp F10    &kp PG_UP  &kp HOME  &kp UP    &kp END    &none
   &kp CAPS        &kp F4  &kp F5  &kp F6  &kp F11    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none
@@ -194,7 +194,7 @@
         // Layer 3: Special Keys (Activated by SYMNUM + NAV)
 
         special_layer {
-            label = "SPECIAL";
+            name = "SPECIAL";
             bindings = <
   &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &none         &to 4           &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI
   &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &rgb_ug RGB_SAD
@@ -208,7 +208,7 @@
         // Layer 4: Gaming Layer
 
         gaming_layer {
-            label = "GAMING";
+            name = "GAMING";
             bindings = <
   &kp ENTER  &kp Q  &kp W    &kp E      &kp R    &kp N7  &kp N8  &kp N9   &kp N0    &to COLEMAK
   &kp LSHFT  &kp A  &kp S    &kp D      &kp F    &kp G   &kp J   &kp K    &kp L     &none
