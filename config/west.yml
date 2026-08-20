@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-anti-idle
-      remote: kbrd-space
+      remote: danielelombardo
       revision: main
   self:
     path: config
