@@ -183,7 +183,7 @@
                               &trans     &trans    &none        &none  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN   &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN   &inc_dec_kp SCROLL_DOWN SCROLL_UP>;
         };
 
         // Layer 2: Navigation & Function Keys
