@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/pointing.h>
 #include <behaviors/anti_idle_mode.dtsi>
 #include <dt-bindings/anti_idle_mode.h>
 #include <behaviors.dtsi>
